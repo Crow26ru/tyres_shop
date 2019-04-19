@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Главная</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sprite" style="display: none">
+      <!-- Место для SVG спрайта -->
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="instagram-icon" viewBox="0 0 16 16" xml:space="preserve"><path class="st0" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/><path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/><circle class="st0" cx="12.3" cy="3.7" r=".9"/></symbol>
+      </svg>
+    </div>
+    <header class="header">
+      <section class="header__site">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="https://dummyimage.com/200x40/cccccc/000000&text=Лого">
+          <source media="(min-width: 768px)" srcset="https://dummyimage.com/150x40/cccccc/000000&text=Лого">
+          <img src="https://dummyimage.com/40x66/cccccc/000000&text=Лого" alt="Логотип магазина" class="header__logo">
+        </picture>
+        <h1 class="header__main-title">Магазин</h1>
+        <button class="header__navigation-toggle-control"></button>
+      </section>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="catalog.html" class="navigation__link">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a href="catalog.html" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="content__popular popular">
+        <h2 class="popular__title">Популярное</h2>
+        <ul class="popular__list">
+          <li class="popular__item">
+            <div class="popular__item-container">
+              <h3 class="popular__item-title">
+                <a href="#" class="popular__name">Название товара</a>
+              </h3>
+              <a href="#" class="popular__link">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="https://dummyimage.com/245x174/cccccc/000000&text=Товар">
+                  <source media="(min-width: 768px)" srcset="https://dummyimage.com/324x174/cccccc/000000&text=Товар">
+                  <img src="https://dummyimage.com/280x210/cccccc/000000&text=Товар" alt="Название товара" class="popular__preview">
+                </picture>
+              </a>
+              <section class="product-description">
+                <h4 class="visually-hidden">Краткое описание</h4>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Размер:&nbsp;</strong>175/70 R13
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Сезонность:&nbsp;</strong>лето
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс нагрузки:&nbsp;</strong>82 (600 кг)
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс скорости:&nbsp;</strong>H (140 км/ч)
+                </p>
+                <p class="product-description__price">Цена: 1 500 &#8381;</p>
+              </section>
+            </div>
+          </li>
+          <li class="popular__item">
+            <div class="popular__item-container">
+              <h3 class="popular__item-title">
+                <a href="#" class="popular__name">Название товара</a>
+              </h3>
+              <a href="#" class="popular__link">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="https://dummyimage.com/245x174/cccccc/000000&text=Товар">
+                  <source media="(min-width: 768px)" srcset="https://dummyimage.com/324x174/cccccc/000000&text=Товар">
+                  <img src="https://dummyimage.com/280x210/cccccc/000000&text=Товар" alt="Название товара" class="popular__preview">
+                </picture>
+              </a>
+              <section class="product-description">
+                <h4 class="visually-hidden">Краткое описание</h4>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Размер:&nbsp;</strong>175/70 R13
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Сезонность:&nbsp;</strong>лето
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс нагрузки:&nbsp;</strong>82 (600 кг)
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс скорости:&nbsp;</strong>H (140 км/ч)
+                </p>
+                <p class="product-description__price">Цена: 1 500 &#8381;</p>
+              </section>
+            </div>
+          </li>
+          <li class="popular__item">
+            <div class="popular__item-container">
+              <h3 class="popular__item-title">
+                <a href="#" class="popular__name">Название товара</a>
+              </h3>
+              <a href="#" class="popular__link">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="https://dummyimage.com/245x174/cccccc/000000&text=Товар">
+                  <source media="(min-width: 768px)" srcset="https://dummyimage.com/324x174/cccccc/000000&text=Товар">
+                  <img src="https://dummyimage.com/280x210/cccccc/000000&text=Товар" alt="Название товара" class="popular__preview">
+                </picture>
+              </a>
+              <section class="product-description">
+                <h4 class="visually-hidden">Краткое описание</h4>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Размер:&nbsp;</strong>175/70 R13
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Сезонность:&nbsp;</strong>лето
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс нагрузки:&nbsp;</strong>82 (600 кг)
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс скорости:&nbsp;</strong>H (140 км/ч)
+                </p>
+                <p class="product-description__price">Цена: 1 500 &#8381;</p>
+              </section>
+            </div>
+          </li>
+          <li class="popular__item">
+            <div class="popular__item-container">
+              <h3 class="popular__item-title">
+                <a href="#" class="popular__name">Название товара</a>
+              </h3>
+              <a href="#" class="popular__link">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="https://dummyimage.com/245x174/cccccc/000000&text=Товар">
+                  <source media="(min-width: 768px)" srcset="https://dummyimage.com/324x174/cccccc/000000&text=Товар">
+                  <img src="https://dummyimage.com/280x210/cccccc/000000&text=Товар" alt="Название товара" class="popular__preview">
+                </picture>
+              </a>
+              <section class="product-description">
+                <h4 class="visually-hidden">Краткое описание</h4>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Размер:&nbsp;</strong>175/70 R13
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Сезонность:&nbsp;</strong>лето
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс нагрузки:&nbsp;</strong>82 (600 кг)
+                </p>
+                <p class="product-description__text">
+                  <strong class="product-description__mark">Индекс скорости:&nbsp;</strong>H (140 км/ч)
+                </p>
+                <p class="product-description__price">Цена: 1 500 &#8381;</p>
+              </section>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="content__search-size search-size">
+        <h2 class="search-size__title">Поиск по размеру</h2>
+        <form action="#" class="search-size__form" method="get">
+          <p class="serch-size__container">
+            <label for="width" class="search-size__label">Ширина профиля</label>
+            <select name="width" id="width" class="search-size__select">
+              <option value="135">135</option>
+              <option value="155">155</option>
+              <option value="165">165</option>
+            </select>
+          </p>
+          <p class="serch-size__container">
+            <label for="height" class="search-size__label">Высота профиля</label>
+            <select name="height" id="height" class="search-size__select">
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+            </select>
+          </p>
+          <p class="serch-size__container">
+          <label for="diameter" class="search-size__label">Диаметр</label>
+            <select name="diameter" id="diameter" class="search-size__select">
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+            </select>
+          </p>
+          <button type="submit" class="search-size__submit">Найти</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__phone phone">
+      <h2 class="phone__title">Наши телефоны</h2>
+      <p class="phone__contaner">
+        <strong class="phone__name">Имя:&nbsp;</strong>
+        <a href="tel:+79668666699" class="phone__number">+7 (966) 666-99-66</a>
+      </p>
+      </div>
+      <div class="footer__social social">
+        <h2 class="social__title">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="Instagram">
+              <!-- Место под SVG иконку соц. сети -->
+              <svg class="social__icon social__icon--instagram" width="23" height="23">
+                <use xlink:href="#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <p class="footer__copyright">
+      &copy;&nbsp;Название магазина, 2019
+    </p>
+  </footer>
+  </div>
+</body>
+</html>

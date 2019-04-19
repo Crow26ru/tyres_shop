@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Каталог</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sprite" style="display: none">
+      <!-- Место для SVG спрайта -->
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="instagram-icon" viewBox="0 0 16 16" xml:space="preserve"><path class="st0" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/><path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/><circle class="st0" cx="12.3" cy="3.7" r=".9"/></symbol>
+      </svg>
+    </div>
+    <header class="header">
+      <section class="header__site">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="https://dummyimage.com/200x40/cccccc/000000&text=Лого">
+          <source media="(min-width: 768px)" srcset="https://dummyimage.com/150x40/cccccc/000000&text=Лого">
+          <img src="https://dummyimage.com/40x66/cccccc/000000&text=Лого" alt="Логотип магазина" class="header__logo">
+        </picture>
+        <h1 class="header__main-title">Магазин</h1>
+        <button class="header__navigation-toggle-control"></button>
+      </section>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="catalog.html" class="navigation__link navigation__link">Каталог</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="content__product product">
+        <h2 class="product__title">Название товара</h2>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="https://dummyimage.com/200x40/cccccc/000000&text=Лого">
+          <source media="(min-width: 768px)" srcset="https://dummyimage.com/150x40/cccccc/000000&text=Лого">
+          <img src="https://dummyimage.com/280x210/cccccc/000000&text=Товар" alt="Название" class="product__img">
+        </picture>
+        <p class="product__description">
+          <strong class="product__mark">Производитель:&nbsp;</strong>
+          <a href="#" class="product__link">Viatti</a>
+        </p>
+        <p class="product__description">
+          <strong class="product__mark">Название:&nbsp;</strong>
+          <a href="#" class="product__link">Viatti Strada</a>
+        </p>
+        <p class="product__description">
+          <strong class="product__mark">Сезонность:&nbsp;</strong>
+          <span>Летняя</span>
+        </p>
+        <p class="product__description">
+          <strong class="product__mark">Размер:&nbsp;</strong>
+          <a href="#" class="product__link">175/70 R13</a>
+        </p>
+        <p class="product__description">
+          <strong class="product__mark">Индекс нагрузки:&nbsp;</strong>
+          <span>82 (до 475 кг)</span>
+        </p>
+        <p class="product__description">
+          <strong class="product__mark">Индекс скорости:&nbsp;</strong>
+          <span>H (до 210 км/ч)</span>
+        </p>
+        <p class="product__description">
+          <strong class="product__mark">Страна производства:&nbsp;</strong>
+          <span>Россия</span>
+        </p>
+        <h3 class="product__features-title">Особенности шины</h3>
+        <p class="product__description product__description--text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis nisi ut massa finibus porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent eu efficitur nisi. Proin feugiat feugiat libero non pulvinar. Donec sed efficitur ligula. Donec mattis ligula eget pulvinar sollicitudin. Maecenas varius, neque non mollis interdum, est tellus fermentum leo, eu eleifend neque odio in tellus.
+
+          Maecenas pellentesque lectus sed lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean sollicitudin, mi vestibulum congue lacinia, libero tortor vestibulum nunc, ac eleifend arcu mauris id risus. Duis tempor dolor lectus, pulvinar tincidunt ipsum fringilla ut. Aliquam quis elementum mi. Morbi justo eros, laoreet ac magna vitae, porta gravida mauris. Aliquam non mattis odio, nec lacinia lorem. Sed nec laoreet sapien. Proin et enim quis lacus porta ultrices. Sed venenatis non erat ac efficitur. Etiam massa tellus, consequat id massa ac, vehicula tempus eros. Fusce bibendum nunc eget maximus vestibulum. Morbi malesuada congue nulla, ut interdum mauris dignissim sit amet. Proin vitae vestibulum justo, vitae auctor elit.
+
+          Quisque imperdiet quis eros eu sodales. Vivamus ultrices magna ac hendrerit commodo. In nec placerat enim. Vestibulum condimentum placerat nulla, nec hendrerit felis tincidunt ac. Nam cursus lacus dapibus metus hendrerit tempus. Nunc sodales, justo ut congue facilisis, turpis turpis sodales ipsum, et finibus odio elit eu turpis. Phasellus porta dui vel nisl ultricies, nec sagittis massa convallis. Nam eget luctus metus. Cras nec tellus dictum, laoreet mauris et, vehicula nisl. Quisque rutrum dui ac consectetur molestie.
+        </p>
+        <p class="product__price">Цена: 1 500 &#8381;</p>
+        <a href="#" class="product__analogue">Другие шины 175/70 R13</a>
+        <a href="#" class="product__analogue">Все шины Viatti Strada</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__phone phone">
+      <h2 class="phone__title">Наши телефоны</h2>
+      <p class="phone__contaner">
+        <strong class="phone__name">Имя:&nbsp;</strong>
+        <a href="tel:+79668666699" class="phone__number">+7 (966) 666-99-66</a>
+      </p>
+      </div>
+      <div class="footer__social social">
+        <h2 class="social__title">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="Instagram">
+              <!-- Место под SVG иконку соц. сети -->
+              <svg class="social__icon social__icon--instagram" width="23" height="23">
+                <use xlink:href="#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <p class="footer__copyright">
+      &copy;&nbsp;Название магазина, 2019
+    </p>
+  </footer>
+  </div>
+</body>
+</html>
