@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Добавление пользователя</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="admin-page">
+    <h1 class="admin-page__title">Добавление пользователя</h1>
+    <form action="#" class="form form--admin-registration" method="post">
+      <p class="form__wrapper">
+        <label for="name" class="form__label">Имя:</label>
+        <input type="text" id="name" class="form__text-field">
+        <span class="form__message"></span>
+      </p>
+      <p class="form__wrapper">
+        <label for="login" class="form__label">Логин:</label>
+        <input type="text" id="login" class="form__text-field">
+        <span class="form__message"></span>
+      </p>
+      <p class="form__wrapper">
+        <label for="email" class="form__label">E-mail:</label>
+        <input type="text" id="email" class="form__text-field">
+        <span class="form__message">Не верный e-mail</span>
+      </p>
+      <p class="form__wrapper">
+        <label for="password" class="form__label">Пароль:</label>
+        <input type="password" id="password" class="form__text-field">
+        <span class="form__message"></span>
+      </p>
+      <p class="form__wrapper">
+        <label for="password-check" class="form__label">Повторите пароль:</label>
+        <input type="password" id="password-check" class="form__text-field">
+        <span class="form__message"></span>
+      </p>
+      <p class="form__wrapper">
+        <button class="form__submit" type="submit">Добавить</button>
+      </p>
+    </form>
+  </main>
+</body>
+</html>
