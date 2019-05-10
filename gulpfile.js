@@ -50,7 +50,7 @@ gulp.task('server', function () {
   });
 
   gulp.watch('source/less/**/*.less', gulp.series('css', 'refresh'));
-  gulp.watch('source/*.html', gulp.series('build', 'refresh'));
+  gulp.watch('source/**/*.html', gulp.series('build', 'refresh'));
   gulp.watch('source/js/*.js', gulp.series('js', 'refresh'));
 });
 
@@ -87,7 +87,7 @@ gulp.task('copy', function() {
   return gulp.src([
       'source/fonts/*.{woff,woff2}',
       'source/img/*.{jpg,png,svg}',
-      'source/*.html'
+      'source/**/*.html'
     ], {
       base: 'source'
     })
