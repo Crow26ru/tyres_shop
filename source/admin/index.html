@@ -7,20 +7,31 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <div class="sprite" style="display: none">
+    <!-- Место для SVG спрайта -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol id="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path d="M10 15h12v2H10z"/><path d="M15 10h2v12h-2z"/><circle fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="16" cy="16" r="12"/></symbol>
+    </svg>
+  </div>
   <main class="admin-page">
     <h1 class="admin-page__title">Админ панель</h1>
     <div class="admin-page__server server">
       <section class="server__account account">
         <h2 class="account__title">Профиль</h2>
         <p class="account__text">Здравствуйте, Вася Пупкин</p>
-        <a href="#" class="account__link">Изменить пароль</a>
-        <a href="#" class="account__link">Выйти</a>
+        <a href="#" class="link link--block link--success account__link">Изменить пароль</a>
+        <a href="#" class="link link--block link--cancel account__link">Выйти</a>
       </section>
       <section class="server__users users">
         <h2 class="users__title">Пользователи</h2>
-        <ul class="users__list">
+        <ul class="list users__list">
           <li class="users__item">
-            <a href="#" class="users__link">Добавить</a>
+            <a href="#" class="link link--block link--add users__link">
+              <svg class="icon" width="18" height="18">
+                <use xlink:href="#plus-icon"></use>
+              </svg>
+              Добавить
+            </a>
           </li>
           <li class="users__item">
             <a href="#" class="users__link">Редактировать</a>

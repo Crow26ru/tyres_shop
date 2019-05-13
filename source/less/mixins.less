@@ -1,5 +1,17 @@
 @tablet: ~"(min-width: 768px)";
 
+.font(@font-size: 14px, @line-height: 18px, @font-weight: 400) {
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: @font-weight;
+}
+
+.flex() {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
 .flex-wrap() {
   display: flex;
   flex-grow: 0;

@@ -1,0 +1,65 @@
+.link {
+  .font();
+  color: inherit;
+
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.link--block {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 6px 15px;
+}
+
+.link--success {
+  border-color: darken(#68b738, 10%);
+
+  color: #ffffff;
+
+  background-color: #68b738;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+
+    background-color: #ffffff;
+    transition: background-color 0.4s, color 0.4s;
+  }
+}
+
+.link--cancel {
+  @color: spin(#68b738, -120);
+
+  border-color: darken(@color, 10%);
+
+  color: #ffffff;
+
+  background-color: @color;
+
+  &:hover,
+  &:focus {
+    color: @color;
+
+    background-color: #ffffff;
+    transition: background-color 0.4s, color 0.4s;
+  }
+}
+
+.link--add {
+  @color: spin(#68b738, 120);
+
+  border-color: darken(@color, 10%);
+
+  color: #ffffff;
+
+  background-color: @color;
+
+  &:hover,
+  &:focus {
+    color: @color;
+
+    background-color: #ffffff;
+    transition: background-color 0.4s, color 0.4s;
+  }
+}
