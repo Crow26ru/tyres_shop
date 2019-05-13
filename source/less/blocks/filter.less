@@ -8,6 +8,19 @@
   border: 2px solid #cccccc;
   border-radius: 4px;
   padding: 0;
+
+  @media @tablet {
+    width: 339px;
+
+    &--size {
+      align-self: stretch;
+    }
+
+    &--season {
+      .flex-wrap();
+      width: 100%;
+    }
+  }
 }
 
 .filter__title {
@@ -56,6 +69,17 @@
 
   &--multiselect {
     margin-top: 0;
+  }
+
+  @media @tablet {
+    &--season {
+      width: 334px;
+    }
+
+    &--buttons {
+      margin: 23px 0 0 0;
+      width: 343px;
+    }
   }
 }
 
